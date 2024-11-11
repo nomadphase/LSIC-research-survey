@@ -63,3 +63,23 @@ body {
 .hidden {
     display: none;
 }
+.survey-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.survey-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 32rem;
+}
+
+select.form-input {
+    background-color: white;
+    cursor: pointer;
+}

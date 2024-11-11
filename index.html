@@ -33,7 +33,6 @@
                     <section class="survey-section">
                         <h2>1. Research Role & Background</h2>
                         
-                        <!-- Primary Role -->
                         <div class="form-group">
                             <label>Primary Role(s) with LSIC Data</label>
                             <select name="primary_role" class="form-input" required>
@@ -46,7 +45,6 @@
                             </select>
                         </div>
 
-                        <!-- Statistical Training -->
                         <div class="form-group">
                             <label>Statistical Training Background (Select all that apply)</label>
                             <div class="checkbox-group">
@@ -73,7 +71,6 @@
                             </div>
                         </div>
 
-                        <!-- Methodological Background -->
                         <div class="form-group">
                             <label>Methodological Background</label>
                             <div class="radio-group">
@@ -98,7 +95,6 @@
                         <h2>2. Statistical Experience Assessment</h2>
                         <p class="section-desc">Rate your confidence in each area (1 = Limited/No Experience, 5 = Expert Level)</p>
 
-                        <!-- Descriptive Statistics -->
                         <div class="form-group">
                             <h3>Descriptive Statistics</h3>
                             <div class="rating-group">
@@ -109,6 +105,202 @@
                                 <div class="rating-item">
                                     <label>Evaluating normality assumptions</label>
                                     <input type="range" min="1" max="5" name="stats_normality" class="range-input" required>
+                                </div>
+                                <div class="rating-item">
+                                    <label>Understanding standard deviations</label>
+                                    <input type="range" min="1" max="5" name="stats_sd" class="range-input" required>
+                                </div>
+                                <div class="rating-item">
+                                    <label>Analyzing distributions</label>
+                                    <input type="range" min="1" max="5" name="stats_distributions" class="range-input" required>
+                                </div>
+                                <div class="rating-item">
+                                    <label>Working with z-scores</label>
+                                    <input type="range" min="1" max="5" name="stats_zscores" class="range-input" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <h3>Significance Testing & Effect Sizes</h3>
+                            <div class="rating-group">
+                                <div class="rating-item">
+                                    <label>Understanding p-values</label>
+                                    <input type="range" min="1" max="5" name="stats_pvalues" class="range-input" required>
+                                </div>
+                                <div class="rating-item">
+                                    <label>Interpreting effect sizes</label>
+                                    <input type="range" min="1" max="5" name="stats_effect_sizes" class="range-input" required>
+                                </div>
+                                <div class="rating-item">
+                                    <label>Distinguishing statistical vs practical significance</label>
+                                    <input type="range" min="1" max="5" name="stats_significance" class="range-input" required>
+                                </div>
+                                <div class="rating-item">
+                                    <label>Computing power analyses</label>
+                                    <input type="range" min="1" max="5" name="stats_power" class="range-input" required>
+                                </div>
+                                <div class="rating-item">
+                                    <label>Evaluating sample size requirements</label>
+                                    <input type="range" min="1" max="5" name="stats_sample_size" class="range-input" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <h3>Advanced Statistical Methods</h3>
+                            <div class="rating-group">
+                                <div class="rating-item">
+                                    <label>Factor analysis</label>
+                                    <input type="range" min="1" max="5" name="stats_factor" class="range-input" required>
+                                </div>
+                                <div class="rating-item">
+                                    <label>Multilevel modelling</label>
+                                    <input type="range" min="1" max="5" name="stats_multilevel" class="range-input" required>
+                                </div>
+                                <div class="rating-item">
+                                    <label>Longitudinal analysis</label>
+                                    <input type="range" min="1" max="5" name="stats_longitudinal" class="range-input" required>
+                                </div>
+                                <div class="rating-item">
+                                    <label>Structural equation modelling</label>
+                                    <input type="range" min="1" max="5" name="stats_sem" class="range-input" required>
+                                </div>
+                                <div class="rating-item">
+                                    <label>Missing data approaches</label>
+                                    <input type="range" min="1" max="5" name="stats_missing" class="range-input" required>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Section 3: Technical Competency Areas -->
+                    <section class="survey-section">
+                        <h2>3. Technical Competency Areas</h2>
+                        
+                        <div class="form-group">
+                            <h3>Measurement Development & Validation</h3>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="measurement_competency" value="foundational" required>
+                                    Foundational: I can interpret basic reliability and validity metrics
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="measurement_competency" value="intermediate">
+                                    Intermediate: I can assess measurement models and invariance
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="measurement_competency" value="advanced">
+                                    Advanced: I can develop and validate new measures
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <h3>Statistical Modelling</h3>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="modelling_competency" value="foundational" required>
+                                    Foundational: I can conduct basic analyses (t-tests, ANOVA, regression)
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="modelling_competency" value="intermediate">
+                                    Intermediate: I can apply advanced methods with some guidance
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="modelling_competency" value="advanced">
+                                    Advanced: I can independently develop complex statistical models
+                                </label>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Section 4: Limitations Assessment Skills -->
+                    <section class="survey-section">
+                        <h2>4. Limitations Assessment Skills</h2>
+                        
+                        <div class="form-group">
+                            <h3>Recognition Skills</h3>
+                            <p class="section-desc">I can identify limitations related to:</p>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="limitation_sample_size">
+                                    Sample size and power
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="limitation_reliability">
+                                    Measurement reliability
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="limitation_assumptions">
+                                    Statistical assumptions
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="limitation_model">
+                                    Model specification
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="limitation_cultural">
+                                    Cultural validity
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="limitation_generalizability">
+                                    Generalisability
+                                </label>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Section 5: Ethical Competencies -->
+                    <section class="survey-section">
+                        <h2>5. Ethical Competencies</h2>
+                        <p class="section-desc">Rate your confidence in each area (1 = Limited/No Experience, 5 = Expert Level)</p>
+
+                        <div class="form-group">
+                            <h3>Cultural Competency</h3>
+                            <div class="rating-group">
+                                <div class="rating-item">
+                                    <label>Understanding Indigenous cultural protocols and practices</label>
+                                    <input type="range" min="1" max="5" name="cultural_protocols" class="range-input" required>
+                                </div>
+                                <div class="rating-item">
+                                    <label>Incorporating Indigenous perspectives into research design</label>
+                                    <input type="range" min="1" max="5" name="cultural_perspectives" class="range-input" required>
+                                </div>
+                                <div class="rating-item">
+                                    <label>Building relationships with Indigenous stakeholders</label>
+                                    <input type="range" min="1" max="5" name="cultural_relationships" class="range-input" required>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Section 6: Statistical Software Proficiency -->
+                    <section class="survey-section">
+                        <h2>6. Statistical Software Proficiency</h2>
+                        <p class="section-desc">Rate your expertise (1 = Limited/No Experience, 5 = Expert Level)</p>
+
+                        <div class="form-group">
+                            <div class="rating-group">
+                                <div class="rating-item">
+                                    <label>SPSS</label>
+                                    <input type="range" min="1" max="5" name="software_spss" class="range-input" required>
+                                </div>
+                                <div class="rating-item">
+                                    <label>R</label>
+                                    <input type="range" min="1" max="5" name="software_r" class="range-input" required>
+                                </div>
+                                <div class="rating-item">
+                                    <label>Stata</label>
+                                    <input type="range" min="1" max="5" name="software_stata" class="range-input" required>
+                                </div>
+                                <div class="rating-item">
+                                    <label>Mplus</label>
+                                    <input type="range" min="1" max="5" name="software_mplus" class="range-input" required>
+                                </div>
+                                <div class="rating-item">
+                                    <label>NVivo (or similar, for qualitative analysis)</label>
+                                    <input type="range" min="1" max="5" name="software_nvivo" class="range-input" required>
                                 </div>
                             </div>
                         </div>

@@ -83,3 +83,64 @@ select.form-input {
     background-color: white;
     cursor: pointer;
 }
+/* Add to existing CSS */
+.survey-section {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.survey-section h2 {
+    margin-bottom: 1rem;
+    color: #1f2937;
+}
+
+.section-desc {
+    color: #4b5563;
+    margin-bottom: 1rem;
+}
+
+.checkbox-group, .radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.checkbox-label, .radio-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.rating-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.rating-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.range-input {
+    width: 100%;
+    cursor: pointer;
+}
+
+.subtitle {
+    color: #4b5563;
+    margin-bottom: 2rem;
+}
+
+.survey-card {
+    max-width: 48rem;
+    margin: 2rem auto;
+}
+
+.survey-form {
+    margin-top: 2rem;
+}

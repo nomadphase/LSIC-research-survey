@@ -25,17 +25,95 @@
         <!-- Survey Form (Initially Hidden) -->
         <div id="surveyForm" class="survey-container hidden">
             <div class="survey-card">
-                <h2>LSIC Research Survey</h2>
-                <form onsubmit="handleSubmit(event)">
-                    <div class="form-group">
-                        <label>Primary Role</label>
-                        <select name="role" class="form-input" required>
-                            <option value="">Select your role</option>
-                            <option value="pi">Principal Investigator</option>
-                            <option value="analyst">Statistical Analyst</option>
-                            <option value="team">Research Team Member</option>
-                        </select>
-                    </div>
+                <h1>Quantitative Research Skills Assessment Survey</h1>
+                <p class="subtitle">This assessment matrix aims to systematically evaluate researchers' statistical knowledge, ethical competencies, and skills specific to LSIC research.</p>
+
+                <form onsubmit="handleSubmit(event)" class="survey-form">
+                    <!-- Section 1: Research Role & Background -->
+                    <section class="survey-section">
+                        <h2>1. Research Role & Background</h2>
+                        
+                        <!-- Primary Role -->
+                        <div class="form-group">
+                            <label>Primary Role(s) with LSIC Data</label>
+                            <select name="primary_role" class="form-input" required>
+                                <option value="">Select your role</option>
+                                <option value="pi">Principal Investigator</option>
+                                <option value="analyst">Statistical Analyst</option>
+                                <option value="team">Research Team Member</option>
+                                <option value="community">Community Researcher</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <!-- Statistical Training -->
+                        <div class="form-group">
+                            <label>Statistical Training Background (Select all that apply)</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="training_university">
+                                    Formal university statistics coursework
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="training_workshops">
+                                    Professional development/workshops
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="training_self">
+                                    Self-taught/independent learning
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="training_mentored">
+                                    Mentored research experience
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="training_teaching">
+                                    Teaching experience
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Methodological Background -->
+                        <div class="form-group">
+                            <label>Methodological Background</label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="methodological_background" value="quantitative" required>
+                                    Primarily quantitative
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="methodological_background" value="qualitative">
+                                    Primarily qualitative
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="methodological_background" value="mixed">
+                                    Mixed methods
+                                </label>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Section 2: Statistical Experience Assessment -->
+                    <section class="survey-section">
+                        <h2>2. Statistical Experience Assessment</h2>
+                        <p class="section-desc">Rate your confidence in each area (1 = Limited/No Experience, 5 = Expert Level)</p>
+
+                        <!-- Descriptive Statistics -->
+                        <div class="form-group">
+                            <h3>Descriptive Statistics</h3>
+                            <div class="rating-group">
+                                <div class="rating-item">
+                                    <label>Interpreting basic statistical results</label>
+                                    <input type="range" min="1" max="5" name="stats_basic" class="range-input" required>
+                                </div>
+                                <div class="rating-item">
+                                    <label>Evaluating normality assumptions</label>
+                                    <input type="range" min="1" max="5" name="stats_normality" class="range-input" required>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
                     <button type="submit" class="btn-primary">Submit Survey</button>
                 </form>
             </div>
